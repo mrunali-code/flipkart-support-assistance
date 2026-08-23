@@ -1,0 +1,20 @@
+{
+  "test_id": "TEST_08_GROUNDEDNESS_CHECK_REFUSAL",
+  "description": "(f) Policy question with no sufficiently-similar chunk; output-side groundedness check refuses to answer",
+  "turns": [
+    {
+      "user": "What is Flipkart's exchange policy for pet reptiles and live exotic animals?",
+      "agent_response": {
+        "answer": "Refusal: I cannot answer this policy question because no sufficiently similar policy document was found (Retrieved similarity score: 0.4142, Required groundedness threshold: 0.4500). Please consult Flipkart Customer Support directly.",
+        "source": "policy_kb",
+        "confidence": 0.4142
+      },
+      "groundedness_refusal": true,
+      "groundedness_details": {
+        "max_similarity": 0.4141666889190674,
+        "threshold": 0.45,
+        "reason": "Top chunk similarity 0.4142 is below groundedness threshold 0.4500."
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "test_id": "TEST_04_IMAGE_CLASSIFIER_TOOL",
+  "description": "(c) Product-category question calling classify_product_image against real .png artifact",
+  "turns": [
+    {
+      "user": "Please classify the product category in data/sample_images/00_ankle_boot.png",
+      "agent_response": {
+        "answer": "The uploaded product image is classified as 'Ankle boot' with 94.16% model confidence.",
+        "source": "image_classifier_tool",
+        "confidence": 0.9416
+      },
+      "state_details": {
+        "intent": "image_classify",
+        "tool_result": {
+          "predicted_class": "Ankle boot",
+          "confidence": 0.9415971636772156,
+          "class_probabilities": {
+            "T-shirt/top": 6.6824873101722915e-06,
+            "Trouser": 2.2139825972544713e-08,
+            "Pullover": 8.154478905453288e-07,
+            "Dress": 1.7601659862975794e-07,
+            "Coat": 1.9211260848805978e-07,
+            "Sandal": 0.00015106461069080979,
+            "Shirt": 8.906035873224027e-06,
+            "Sneaker": 0.0582270547747612,
+            "Bag": 7.950276994961314e-06,
+            "Ankle boot": 0.9415971636772156
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "test_id": "TEST_09_POLICY_RAG_REVERSE_PICKUP_QC",
+  "description": "Additional Policy Question: Reverse-pickup doorstep QC policy",
+  "turns": [
+    {
+      "user": "What happens if an item fails doorstep quality check during reverse pickup?",
+      "agent_response": {
+        "answer": "According to Flipkart's Reverse-Pickup Doorstep Quality Check (QC) Criteria: During reverse-pickup, the delivery executive performs a mandatory visual Doorstep Quality Check (QC) before accepting the returned parcel. For apparel and footwear, the executive verifies that tags are attached, fabric is unstained, and brand packaging is present. If the item fails QC criteria, reverse pickup is immediately cancelled.",
+        "source": "policy_kb",
+        "confidence": 0.7331
+      },
+      "state_details": {
+        "intent": "policy_rag",
+        "source": "policy_kb",
+        "confidence": 0.7331
+      }
+    }
+  ]
+}

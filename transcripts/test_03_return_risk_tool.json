@@ -1,0 +1,28 @@
+{
+  "test_id": "TEST_03_RETURN_RISK_TOOL",
+  "description": "(b) Return-risk question that calls check_return_risk with real saved RF artifact",
+  "turns": [
+    {
+      "user": "Can you check the return risk score and risk bucket for order 4?",
+      "agent_response": {
+        "answer": "Order #4 has a predicted return probability of 61.31% and is classified into the 'Medium' risk bucket (calibrated against model threshold t* = 0.50).",
+        "source": "return_risk_tool",
+        "confidence": 0.6131
+      },
+      "state_details": {
+        "intent": "return_risk",
+        "tool_result": {
+          "order_id": 4,
+          "return_probability": 0.6131,
+          "risk_bucket": "Medium",
+          "t_star_rf": 0.5000000000000001,
+          "cut_points": {
+            "low_max": 0.5000000000000001,
+            "high_min": 0.65
+          },
+          "is_high_risk": true
+        }
+      }
+    }
+  ]
+}

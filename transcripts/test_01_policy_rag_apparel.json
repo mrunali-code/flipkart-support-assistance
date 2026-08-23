@@ -1,0 +1,19 @@
+{
+  "test_id": "TEST_01_POLICY_RAG_APPAREL",
+  "description": "(a) Policy Question A answered via RAG (Apparel return window)",
+  "turns": [
+    {
+      "user": "What is the return window for apparel and lifestyle products?",
+      "agent_response": {
+        "answer": "According to Flipkart's Return Window for Lifestyle and Apparel: Flipkart offers a 14-day hassle-free return window for all lifestyle and apparel products starting from the date of delivery. Items must be unused, unwashed, and retained with original tags and packaging. Customers can request either an exchange for size/color or a full refund to the original payment source.",
+        "source": "policy_kb",
+        "confidence": 0.5507
+      },
+      "state_details": {
+        "intent": "policy_rag",
+        "source": "policy_kb",
+        "confidence": 0.5507
+      }
+    }
+  ]
+}

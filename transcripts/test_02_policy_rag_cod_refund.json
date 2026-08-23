@@ -1,0 +1,19 @@
+{
+  "test_id": "TEST_02_POLICY_RAG_COD_REFUND",
+  "description": "(a) Policy Question B answered via RAG (COD bank refund timeline)",
+  "turns": [
+    {
+      "user": "How many days does it take to receive a Cash on Delivery refund to my bank account?",
+      "agent_response": {
+        "answer": "According to Flipkart's COD Refund Timelines via Direct Bank Transfer (NEFT/IMPS): For orders paid via Cash on Delivery (COD), refunds are processed via NEFT bank transfer within 2 to 5 business days after the returned product clears quality check. Customers must add and verify their bank account or UPI ID in the Flipkart refund settings page. Notifications with UTR transaction details are sent via SMS and email.",
+        "source": "policy_kb",
+        "confidence": 0.565
+      },
+      "state_details": {
+        "intent": "policy_rag",
+        "source": "policy_kb",
+        "confidence": 0.565
+      }
+    }
+  ]
+}
